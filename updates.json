@@ -1,0 +1,12 @@
+{
+  "addons": {
+    "blank-drag@aht02.github.io": {
+      "updates": [
+        {
+          "version": "1.0.0",
+          "update_link": "https://github.com/Aht02/zotero-blank-drag/releases/download/v1.0.0/zotero-blank-drag-1.0.0.xpi"
+        }
+      ]
+    }
+  }
+}

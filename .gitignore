@@ -1,0 +1,6 @@
+.reference/
+.test-profile/
+.test-data/
+.test-results/
+dist/
+node_modules/
