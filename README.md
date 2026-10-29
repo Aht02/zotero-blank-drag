@@ -11,7 +11,7 @@
 2. 在 Zotero 中打开「工具 → 插件」，点右上角的齿轮，选择「从文件安装插件」，选中刚下载的文件。
 3. 如果已打开的 PDF 没有立即生效，重新打开该 PDF。
 
-安装后插件会通过本仓库的 [`updates.json`](updates.json) 检查更新，新版本会出现在「工具 → 插件」面板里，也可以手动下载新版 XPI 覆盖安装。
+**更新请手动安装**：下载新版 XPI 覆盖安装即可，Zotero 会替换旧版并保留设置。本插件不推送自动更新——Zotero 10 要求插件清单必须带 HTTPS 更新地址（缺失会拒绝安装），所以仓库里仍有 `updates.json`，但其中只列当前版本，不会提示升级。
 
 ## 使用
 
@@ -40,7 +40,7 @@ Ctrl/Command、Shift、Alt 修饰的滚轮、横向输入、按住鼠标时的�
 
 ## 与 Zotero Smart Hand 的关系
 
-同一作者另有一个 [Zotero Smart Hand](https://github.com/Aht02/zotero-smart-hand)（手型工具下的智能手型）。两者都会接管 PDF 的拖动与选字，**功能重叠，请只启用其中一个**：
+同一作者另有一个 [Zotero Smart Hand](https://github.com/Aht02/zotero-smart-hand)（手型工具下的智能手型）。两者都会接管 PDF 的拖动与选字，**功能部分重叠，建议只启用其中一个**：
 
 - 本插件作用于阅读器**默认的文字选择工具**。
 - Smart Hand 作用于阅读器**原生手型工具**。

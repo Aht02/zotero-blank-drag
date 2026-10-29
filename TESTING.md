@@ -103,7 +103,7 @@ SHA-256：`E185DE3100EE7DADBF62B102A0FFD2543EF08C0D82041D084FD9677E3BD26C58`
 
 - 1.0.1 的 `updateHover()` 每次先撤销箭头属性，然后调用会刷新样式的命中检测，导致 Zotero 原有 I 型光标短暂露出。1.0.2 保持旧样式完成判断，仅在区域状态真正改变时更新属性。
 
-- Zotero 10 必须提供 HTTPS `update_url`，缺失会拒绝安装，使用 `data:` URL 会禁用插件。开发期曾用保留的 `.invalid` 域名占位、只能手动安装；公开发布版改用本仓库 `main` 分支的 `updates.json` 作为更新清单。
+- Zotero 10 必须提供 HTTPS `update_url`，缺失会拒绝安装，使用 `data:` URL 会禁用插件。开发期曾用保留的 `.invalid` 域名占位；公开发布版改用本仓库 `main` 分支的 `updates.json` 作为更新地址。该字段不可省略，因此地址保留、清单只列当前版本，更新方式仍为手动安装新版 XPI。
 - 对跨 JS 隔离域的阅读器元素调用 `scrollTo(options)` 时，对象参数会被忽略。已改用 `scrollTo(x, y)` 数值重载，并在拖拽期间禁用平滑滚动。
 
 ## 验证边界
