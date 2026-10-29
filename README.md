@@ -40,7 +40,7 @@ Ctrl/Command、Shift、Alt 修饰的滚轮、横向输入、按住鼠标时的�
 
 ## 与 Zotero Smart Hand 的关系
 
-同一作者另有一个 [Zotero Smart Hand](https://github.com/Aht02/zotero-smart-hand)（手型工具下的智能手型）。两者都会接管 PDF 的拖动与选字，**功能部分重叠，建议只启用其中一个**：
+作者另有一个 [Zotero Smart Hand](https://github.com/Aht02/zotero-smart-hand)（手型工具下的智能手型）。两者都会接管 PDF 的拖动与选字，**功能部分重叠，建议只启用其中一个**：
 
 - 本插件作用于阅读器**默认的文字选择工具**。
 - Smart Hand 作用于阅读器**原生手型工具**。
@@ -58,9 +58,9 @@ powershell -NoProfile -ExecutionPolicy Bypass -File scripts/build.ps1
 
 ## 测试
 
-验证使用 Windows 上 Zotero 10.0.6 的隔离配置：安装最终 XPI、注入真实阅读器鼠标事件、检查光标样式；仓库内另有 22 项 Node 单元测试（`node --test tests/*.test.cjs`）。测试细节属于开发记录，不随仓库发布。
+验证使用 Windows 上 Zotero 10.0.6 的隔离配置：安装最终 XPI、注入真实阅读器鼠标事件、检查光标样式。
 
-人工验收：分别在普通 PDF、扫描 PDF、旋转/放大页面、独立窗口和分屏下测试；空白拖动应平移，文字拖动/双击/三击应选字，链接可打开，已有批注可选中和拖动，批注工具可正常新建批注。拖出页面后松开、切换窗口、按 Esc、关闭阅读器或禁用插件后，不应残留拖拽状态。
+
 
 ## 版本
 
