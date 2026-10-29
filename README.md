@@ -58,7 +58,7 @@ powershell -NoProfile -ExecutionPolicy Bypass -File scripts/build.ps1
 
 ## 测试
 
-验证使用 Windows 上本机 Zotero 10.0.6 的隔离配置，包含最终 XPI 安装、真实阅读器鼠标事件和光标样式检查，另外包含 Node 单元测试。详细结果及验证边界见 [`TESTING.md`](TESTING.md)（该文档沿用开发期的版本编号 1.0.x，对应首次公开发布的 1.0.0）。
+验证使用 Windows 上 Zotero 10.0.6 的隔离配置：安装最终 XPI、注入真实阅读器鼠标事件、检查光标样式；仓库内另有 22 项 Node 单元测试（`node --test tests/*.test.cjs`）。测试细节属于开发记录，不随仓库发布。
 
 人工验收：分别在普通 PDF、扫描 PDF、旋转/放大页面、独立窗口和分屏下测试；空白拖动应平移，文字拖动/双击/三击应选字，链接可打开，已有批注可选中和拖动，批注工具可正常新建批注。拖出页面后松开、切换窗口、按 Esc、关闭阅读器或禁用插件后，不应残留拖拽状态。
 
